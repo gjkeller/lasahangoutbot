@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "tsc && node dist/index.js",
-    "registercommands": "tsc && node dist/register-commands.ts",
-    "regcom": "npm registercommands",
+    "start": "tsc && node dist/src/index.js",
+    "registercommands": "tsc && node dist/src/register-commands.js",
+    "regcom": "npm run registercommands",
     "lint": "eslint . --ext .ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
